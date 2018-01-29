@@ -10,7 +10,7 @@ public class MainController {
     public String arraySorting(){
         int[] arr = { 45, 87, 39, 32, 93, 86, 12, 44, 75, 50 };
         String result="";
-        String resultAfter="";
+
         int temp=0;
 
         result+="before: ";
@@ -35,14 +35,14 @@ public class MainController {
 
 
 
-        resultAfter+="<br/"+"after: ";
+        result+="<br/>"+"after: ";
 
         for (int i=0; i<arr.length; i++ ) {
-            resultAfter += arr[i] + " ";
+            result += arr[i] + " ";
             System.out.println(arr[i]);
         }
 
 
-    return result+resultAfter;
+    return result;
     }
 }
